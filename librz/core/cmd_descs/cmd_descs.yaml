@@ -232,9 +232,8 @@ commands:
         flags: RZ_CMD_ARG_FLAG_ARRAY
         optional: true
   - name: m
-    cname: cmd_m
     summary: Make directories and move files
-    type: RZ_CMD_DESC_TYPE_OLDINPUT
+    subcommands: cmd_move
   - name: L
     summary: List, unload, load rizin plugins
     subcommands: cmd_plugins

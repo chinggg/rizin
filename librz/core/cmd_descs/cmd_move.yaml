@@ -1,0 +1,22 @@
+# SPDX-FileCopyrightText: 2021 RizinOrg <info@rizin.re>
+# SPDX-License-Identifier: LGPL-3.0-only
+---
+name: cmd_move
+commands:
+  - name: "mk"
+    cname: mkdir
+    summary: mkdir to create directory
+    args:
+      - name: directory
+        type: RZ_CMD_ARG_TYPE_STRING
+      - name: arg
+  - name: "mv"
+    cname: move
+    summary: Clears the history in current session
+    args:
+      - name: source
+      - name: dest
+  - name: "H+"
+    cname: history_save
+    summary: Saves the history of the current session
+    args: []
