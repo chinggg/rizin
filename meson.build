@@ -174,6 +174,7 @@ executable_cflags = []
 executable_linkflags = []
 library_cflags = ['-DRZ_PLUGIN_INCORE=1']
 library_linkflags = []
+fuzzer_cflags = ['-fsanitize=fuzzer,address']
 b_sanitize_opt = get_option('b_sanitize')
 if (b_sanitize_opt.contains('address') or b_sanitize_opt.contains('undefined')) and cc.get_id() == 'clang'
   executable_cflags += '-shared-libasan'
